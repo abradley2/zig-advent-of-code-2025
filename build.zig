@@ -8,55 +8,55 @@ pub const dayConfig: type = struct {
 const day_configs: [13]dayConfig = [_]dayConfig{
     .{
         .name = "template",
-        .path = "src/template/day_00.zig",
+        .path = "src/template/solution.zig",
     },
     .{
         .name = "day_01",
-        .path = "src/day_01/day_01.zig",
+        .path = "src/day_01/solution.zig",
     },
     .{
         .name = "day_02",
-        .path = "src/day_02/day_02.zig",
+        .path = "src/day_02/solution.zig",
     },
     .{
         .name = "day_03",
-        .path = "src/day_03/day_03.zig",
+        .path = "src/day_03/solution.zig",
     },
     .{
         .name = "day_04",
-        .path = "src/day_04/day_04.zig",
+        .path = "src/day_04/solution.zig",
     },
     .{
         .name = "day_05",
-        .path = "src/day_05/day_05.zig",
+        .path = "src/day_05/solution.zig",
     },
     .{
         .name = "day_06",
-        .path = "src/day_06/day_06.zig",
+        .path = "src/day_06/solution.zig",
     },
     .{
         .name = "day_07",
-        .path = "src/day_07/day_07.zig",
+        .path = "src/day_07/solution.zig",
     },
     .{
         .name = "day_08",
-        .path = "src/day_08/day_08.zig",
+        .path = "src/day_08/solution.zig",
     },
     .{
         .name = "day_09",
-        .path = "src/day_09/day_09.zig",
+        .path = "src/day_09/solution.zig",
     },
     .{
         .name = "day_10",
-        .path = "src/day_10/day_10.zig",
+        .path = "src/day_10/solution.zig",
     },
     .{
         .name = "day_11",
-        .path = "src/day_11/day_11.zig",
+        .path = "src/day_11/solution.zig",
     },
     .{
         .name = "day_12",
-        .path = "src/day_12/day_12.zig",
+        .path = "src/day_12/solution.zig",
     },
 };
 

@@ -2,7 +2,7 @@
 
 Requires a [Zig version](https://ziglang.org/download/) >= 0.15.2 which is the latest stable release as of December 2025
 
-Before building, run `setup.sh`
+Before building, run `make` to setup files
 
 Optionally, delete the `.fingerprint` field from `build.zig.zon`, then run `zig build` to generate a new one
 

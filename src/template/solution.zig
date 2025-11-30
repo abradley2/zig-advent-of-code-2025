@@ -11,13 +11,8 @@ test "partOne" {
     try std.testing.expectEqualStrings("0", output.buffered());
 }
 
-pub fn partOne(allocator: std.mem.Allocator, input: []const u8, output: *std.Io.Writer) !void {
-    const result: u64 = 0;
-
-    _ = allocator;
-    _ = input;
-
-    _ = try output.print("{d}", .{result});
+pub fn partOne(_: std.mem.Allocator, input: []const u8, output: *std.Io.Writer) !void {
+    _ = try output.print("{s}", .{input});
 }
 
 test "partTwo" {
@@ -30,13 +25,8 @@ test "partTwo" {
     try std.testing.expectEqualStrings("0", output.buffered());
 }
 
-pub fn partTwo(allocator: std.mem.Allocator, input: []const u8, output: *std.Io.Writer) !void {
-    const result: u64 = 0;
-
-    _ = allocator;
-    _ = input;
-
-    _ = try output.print("{d}", .{result});
+pub fn partTwo(_: std.mem.Allocator, input: []const u8, output: *std.Io.Writer) !void {
+    _ = try output.print("{s}", .{input});
 }
 
 pub fn main() !void {
