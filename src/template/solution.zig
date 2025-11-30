@@ -5,28 +5,36 @@ test "partOne" {
     var output_buffer: [256]u8 = undefined;
     var output = std.Io.Writer.fixed(&output_buffer);
     const input =
-        \\0
+        \\123
+        \\456
     ;
     try partOne(std.testing.allocator, input, &output);
     try std.testing.expectEqualStrings("0", output.buffered());
 }
 
-pub fn partOne(_: std.mem.Allocator, input: []const u8, output: *std.Io.Writer) !void {
-    _ = try output.print("{s}", .{input});
+pub fn partOne(allocator: std.mem.Allocator, input: []const u8, output: *std.Io.Writer) !void {
+    const result: i64 = 0;
+    _ = allocator;
+    _ = input;
+    _ = try output.print("{d}", .{result});
 }
 
 test "partTwo" {
     var output_buffer: [256]u8 = undefined;
     var output = std.io.Writer.fixed(&output_buffer);
     const input =
-        \\0
+        \\123
+        \\456
     ;
     try partTwo(std.testing.allocator, input, &output);
     try std.testing.expectEqualStrings("0", output.buffered());
 }
 
-pub fn partTwo(_: std.mem.Allocator, input: []const u8, output: *std.Io.Writer) !void {
-    _ = try output.print("{s}", .{input});
+pub fn partTwo(allocator: std.mem.Allocator, input: []const u8, output: *std.Io.Writer) !void {
+    const result: i64 = 0;
+    _ = allocator;
+    _ = input;
+    _ = try output.print("{d}", .{result});
 }
 
 pub fn main() !void {
